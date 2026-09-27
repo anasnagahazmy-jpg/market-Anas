@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="ماركتنا - كل ما تحتاجه في مكان واحد">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/master.css">
+
+    <title>Market</title>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="head">
+        <p>مرحبا بك في ماركتنا 🤍</p>
+        <p>تتبع الطلبات 📞</p>
+        <p>توصيل سريع إلى جميع المحافظات 🚚</p>
+    </div>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <h1>ماركتنا 🛍</h1>
+            <h5>كل ما تحتاجه في مكان واحد</h5>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="إبحث....">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="login">
+            <h2>تسجيل الدخول</h2>
+            <h6>أو إنشاء حساب 👤</h6>
+        </div>
+
+        <div class="cart">
+            <h2>السلة 🛒</h2>
+        </div>
+
+    </header>
+
+
+    <nav class="nav">
+        <a href="#">الرئيسية</a>
+        <a href="#">المنتجات</a>
+        <a href="#">عروض خاصة</a>
+        <a href="#">العلامات التجارية</a>
+        <a href="#">تواصل معنا</a>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+
+        <figure>
+            <img src="./photo-1580674287405-80cd77a2fee2.avif" alt="منتجات">
+        </figure>
+
+        <figure>
+            <img src="./premium_photo-1742244062558-24dd499c6980.avif" alt="منتجات">
+        </figure>
+
+        <figure>
+            <img src="./photo-1601600576337-c1d8a0d1373c.avif" alt="منتجات">
+        </figure>
+
+        <figure>
+            <img src="./premium_photo-1661407806034-4eaf2671322f.avif" alt="منتجات">
+        </figure>
+
+        <figure>
+            <img src="./premium_photo-1682088353711-c6482d7f8f06.avif" alt="منتجات">
+        </figure>
+
+        <div class="content">
+            <h3>Market Anas</h3>
+            <h4>أفضل المنتجات بأفضل أسعار</h4>
+        </div>
+
+    </div>
+
+
+    <section class="counter">
+
+        <div class="box box1">
+            <h2>ماركت متكامل</h2>
+            <h5>كل احتياجاتك اليومية</h5>
+            <button>تسوق الآن</button>
+        </div>
+
+        <div class="box box2">
+            <h2>عروض حصرية</h2>
+            <h5>خصومات تصل إلى 20%</h5>
+            <button>تسوق الآن</button>
+        </div>
+
+        <div class="box box3">
+            <h2>توصيل سريع</h2>
+            <h5>لجميع المحافظات</h5>
+            <button>اطلب الآن</button>
+        </div>
+
+    </section>
+
+<section class="products-section" id="products">
+
+    <div class="section-title">
+        <h2>منتجاتنا</h2>
+        <p>اختار المنتجات التي تريدها وأضفها إلى السلة 🛒</p>
+    </div>
+
+    <div class="products">
+
+        <div class="product" data-name="المشروبات ">
+            <img src="../photo-1601600576337-c1d8a0d1373c.avif" alt="المشروبات ">
+            <h3> المشروبات</h3>
+            <p class="price">150 جنيه</p>
+            <button class="add-cart"
+                data-name=" المشروبات"
+                data-price="150">
+                أضف للسلة 🛒
+            </button>
+        </div>
+
+        <div class="product" data-name=" المأكولات">
+            <img src="../premium_photo-1661407806034-4eaf2671322f.avif" alt="المأكولات ">
+            <h3> المأكولات</h3>
+            <p class="price">120 جنيه</p>
+            <button class="add-cart"
+                data-name=" المأكولات"
+                data-price="120">
+                أضف للسلة 🛒
+            </button>
+        </div>
+
+        <div class="product" data-name=" منتجات الألبان">
+            <img src="../photo-1606824722920-4c652a70f348.avif" alt=" منتجات الألبان">
+            <h3>منتجات الألبان </h3>
+            <p class="price">20 جنيه</p>
+            <button class="add-cart"
+                data-name="منتجات الألبان"
+                data-price="50">
+                أضف للسلة 🛒
+            </button>
+        </div>
+
+    </div>
+
+</section>
+<div class="cart-box" id="cartBox">
+
+    <div class="cart-header">
+        <h2>🛒 سلة المشتريات</h2>
+
+        <button id="closeCart">×</button>
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-total">
+        الإجمالي:
+        <span id="totalPrice">0</span>
+        جنيه
+    </div>
+
+    <button id="checkout">
+        إتمام الطلب
+    </button>
+
+</div>
+
+<div id="toast">
+    تم إضافة المنتج إلى السلة 🛒
+</div>
+    <footer class="iconss">
+
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+
+    </footer>
+<script src="../main.js"></script>
+</body>
+</html>
