@@ -25,7 +25,7 @@ body {
     flex-wrap: wrap;
     gap: 10px;
 
-    background-color: #f5f5f5;
+    background-color: rgb(5, 5, 56);;
     color: red;
     padding: 8px 15px;
     font-size: 20px;
@@ -73,7 +73,7 @@ header {
 
 .login h2,
 .cart h2 {
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .login h6 {
